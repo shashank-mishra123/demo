@@ -1,1 +1,33 @@
+package javabatch3;
+
+// to access feature and method another class//
+ class Parent
+{
+    String address;
+    int house_number;
+    public void eats()
+    {
+        System.out.println("vegetarian");
+    }
+}
+// another class//
+  class child extends Parent// 1level iheritance or single level inheritance
+//
+{
+
+}
+// // multi level inheritance
+class grandson extends child{
+
+}
+//
+ class inheritance {
+    public static void main(String[] args) {
+       new  Parent().eats();
+       // class call//
+        new child().eats();
+         new grandson().eats();
+
+    }
+}
 
